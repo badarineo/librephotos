@@ -2,7 +2,7 @@ import datetime
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_LOGS = os.environ.get("BASE_LOGS", "/logs/")
+BASE_LOGS = os.environ.get("BASE_LOGS", "./logs/")
 BASE_DATA = os.environ.get("BASE_DATA", "/")
 PHOTOS = os.environ.get("PHOTOS", os.path.join(BASE_DATA, "data"))
 STATIC_URL = "api/static/"
